@@ -6,7 +6,7 @@ import Link from "next/link";
 
 /**
  * Fetches the description of a book from the Open Library API
- * @param {string} olId - The Open Library ID of the book (e.g. "OL12345W")
+ * @param {string} olId - The Open Library ID of the book
  * @returns {Promise<string|null>} Description or null if not available
  */
 async function fetchBookDescription(olId) {

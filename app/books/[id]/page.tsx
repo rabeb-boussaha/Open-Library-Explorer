@@ -49,7 +49,8 @@ async function fetchBookData(id) {
 }
 
 export default async function BookDetailPage({ params }) {
-  const book = await fetchBookData(params.id);
+  const { id } = await params;
+  const book = await fetchBookData(id);
 
   if (book.error) {
     return (
